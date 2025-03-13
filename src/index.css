@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.buttons-container {
+  display: flex; 
+  justify-content: flex-end;
+  position: absolute;
+  gap: 10px;
+  bottom: 8px;
+  right: 15px; 
+}
+.cancel-btn, .deactivate-btn {
+  background-color: #e4e2e2;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.deactivate-btn {
+  background-color: #e22323;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.sucess-btn {
+  background-color: #0b0e5c;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.open-btn{
+  background-color: #e4e2e2;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  transform: translate(-50%, 1000%); 
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.succesopen-btn{
+  background-color: #e4e2e2;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  transform: translate(-50%, 800%); 
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
